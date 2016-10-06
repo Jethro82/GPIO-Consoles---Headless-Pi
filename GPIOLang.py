@@ -22,9 +22,6 @@ for Command in sys.argv:
     else:
         param=Command[3:]
         Cmd=Command[:3]
-        print Cmd
-        print param
- 
         if Cmd=='Dly':
             time.sleep (float(param))
         elif Cmd=='TEO':
@@ -35,4 +32,3 @@ for Command in sys.argv:
         elif Cmd=="Off":
             exec("TempArray=["+param+"]")
             GroupSwitch (TempArray,0)
-
